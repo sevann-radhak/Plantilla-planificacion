@@ -24,8 +24,9 @@ codirector, % Uncomment to add a codirector to the title page
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Sidney da Silva Viana}
-\empresaCliente{Parque Tecnológico Itaipu}
+
+\cliente{Carlos Roberto Salinas}
+\empresaCliente{Dirección de Meteorología e Hidrología}
  
 \fechaINICIO{18 de junio de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{13 de agosto de 2024} 	%Fecha de final de cursada de GdP
@@ -100,20 +101,16 @@ Se adjunta a esta acta la planificación inicial.
 \end{table}
 
 
-
-
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
 El cambio climático y los eventos meteorológicos extremos presentan desafíos críticos a nivel global y local, afectando la vida, la infraestructura y la economía. En Paraguay, los eventos extremos como olas de calor, sequías y precipitaciones intensas han aumentado, destacando la necesidad urgente de mejorar la precisión y la efectividad de los pronósticos meteorológicos. 
 
-Las actuales técnicas de monitoreo y predicción no siempre resultan suficientes para emitir advertencias tempranas y precisas. Este proyecto busca utilizar la inteligencia artificial (IA) para analizar grandes volúmenes de datos meteorológicos y climáticos, tanto actuales como históricos, con el fin de mejorar la precisión de las predicciones y la toma de decisiones.
+Las actuales técnicas de monitoreo y predicción no siempre resultan suficientes para emitir advertencias tempranas y precisas. Este proyecto enfrenta el reto de adquirir, analizar y aplicar conocimientos para resolver problemas climatológicos complejos y busca utilizar la inteligencia artificial (IA) para analizar grandes volúmenes de datos meteorológicos y climáticos, tanto actuales como históricos, con el fin de mejorar la precisión de las predicciones y la toma de decisiones.
 
-Este proyecto, propuesto por la Dirección de Meteorología e Hidrología (DINAC) y el Parque Tecnológico Itaipu (Paraguay), busca abordar los desafíos actuales en la predicción de eventos climáticos extremos mediante el uso de herramientas de IA, contribuyendo así a mitigar los impactos del cambio climático en Paraguay y la región.
+Este proyecto, propuesto por la \empclientename\hspace{1px} (DINAC) y el Parque Tecnológico Itaipu de Paraguay, busca abordar los desafíos actuales en la predicción de eventos climáticos extremos mediante el uso de herramientas de IA, contribuyendo así a mitigar los impactos del cambio climático en Paraguay y la región.
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección. En cada entrega parcial deben eliminar los comandos begin y end del bloque consigna de las secciones que hayan completado.
-
-Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase como la siguiente: ``En la figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''.  La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+En la figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observan los pasos propuestos para el desarrollo del presente proyecto. 
 
 \begin{figure}[htpb]
 \centering 
@@ -122,19 +119,29 @@ Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase 
 \label{fig:diagBloques}
 \end{figure}
 
+\textbf{Descarga de datos:}
+la \empclientename\hspace{1px} pondrá a disposición una base de datos para la obtención de datos históricos y actuales de las condiciones meteorológicas.
+
+\textbf{Preprocesamiento de datos:}
+se llevará a cabo un análisis de datos en crudo con el objetivo de dar tratamiento a datos vacíos, inconsistentes o conflictivos.
+
+\textbf{Procesamiento de datos:}
+serán aplicadas técnicas como la imputación de valores faltantes, reducción de dimensionalidad, estimación e interpretación de valores representativos, entre otras.
+
+\textbf{Definición y compilación del modelo:}
+diferentes modelos y técnicas serán propuestas, entrenadas y valuadas para comparar determinar el mejor modelo a utilizar.
+
+\textbf{Entrenamiento y evaluación del modelo:}
+el modelo seleccionado será entrenado con los datos procesados y evaluado aplicando técnicas avanzadas y métricas específicas para determinar su precisión y robustez.
+
+\textbf{Predicción:}
+una vez evaluado y ajustado el modelo, se procederá a realizar predicciones sobre los datos meteorológicos futuros, proporcionando información crítica para la toma de decisiones en la gestión de eventos climáticos extremos.
+
+
 \vspace{25px}
-\end{consigna}
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
-
-\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red} 
-\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código. 
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces \textbf{solo dejarla en el rol más importante}. 
-
-Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente. Si una persona es el Responsable, \textbf{no debe ser colocado también como miembro del equipo}.
-
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -143,31 +150,22 @@ Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Cliente       & \clientename      &\empclientename	&   Gerente de Climatología     	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director del Trabajo Final \\ \hline
-Usuario final & Carlos Roberto Salinas                  & Dirección de Meteorología e Hidrología             	& Gerente de Climatología       	\\ \hline
+Usuario final & Sidney da Silva Viana                  & Central Hidroeléctrica Itaipu             	& Gerente de tecnologías en SI        	\\ \hline
 \end{tabularx}
 \end{table}
 
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
 \begin{itemize}
-	\item Orientador: la Dra. Ing. María Gómez es experta en la temática y va a ayudar con la definición de los requerimientos y el desarrollo del firmware del embebido.
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
+	\item Cliente: el Dr. Ing. Sidney da Silva Vianna es experto en la temática, ejerce como Gerente de tecnologías en Sistemas de la Información (SI) y va a ayudar con la definición de los requerimientos y el desarrollo de la solución.
+	\item Usuario final: Carlos Roberto Salinas, ejerce como 	Gerente de Climatología en la Dirección de Meteorología e Hidrología y la Dirección Nacional de Aeronáutica Civil. Nos proporcionara información útil respecto a las expectativas reales del usuario.
 \end{itemize}
-
-\end{consigna} % este comando se debe borrar para la entrega, junto con la contraparte \begin{consigna}{red}
-
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-Desarrollar un sistema avanzado de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando una respuesta más efectiva ante los fenómenos climáticos adversos y contribuyendo a la mitigación de sus impactos en Paraguay y sus alrededores.
+Desarrollar un sistema avanzado de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando una respuesta más efectiva ante los fenómenos climáticos adversos y contribuyendo a la migración de sus impactos en Paraguay y sus alrededores.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
@@ -177,7 +175,7 @@ El proyecto incluye:
 	\item Recolección y preprocesamiento de datos:
 		\begin{itemize}
 		\item Obtención de datos meteorológicos históricos y actuales almacenados en la base de
-datos de la Dirección de Meteorología e Hidrología.
+datos de la DINAC.
 		\item Limpieza, normalización y preprocesamiento de los datos para su uso en los modelos de IA.
 		\end{itemize}
 	\item Investigación y desarrollo de algoritmos de IA:
@@ -190,7 +188,7 @@ datos de la Dirección de Meteorología e Hidrología.
 		\item Diseño y desarrollo de una plataforma tecnológica que integre los modelos de IA desarrollados.
 		\item Implementación de interfaces de usuario para la visualización de predicciones y alertas.
 		\end{itemize}
-	\item Validación y pptimización de modelos:
+	\item Validación y optimización de modelos:
 		\begin{itemize}
 		\item Pruebas y validación de los modelos de predicción utilizando datos históricos y actuales.
 		\item Optimización continua de los modelos para mejorar su precisión y eficiencia.
@@ -210,17 +208,16 @@ El proyecto no incluye:
 		\item La construcción, instalación o conexión a estaciones meteorológicas no está incluida.
 		\item La actualización o mejora de la infraestructura física existente de recopilación de datos meteorológicos no forma parte del alcance del proyecto.
 		\end{itemize}
-	\item Mantenimiento a Largo Plazo:
+	\item Mantenimiento a largo plazo:
 		\begin{itemize}
 		\item El mantenimiento continuo de la plataforma y los sistemas desarrollados, después de la finalización del proyecto, no está incluido.
 		\item No se llevará a cabo mantenimiento regular post-implementación.
 		\end{itemize}
-	\item Distribución y Gestión de Alertas:
+	\item Distribución y gestión de alertas:
 		\begin{itemize}
-		\item La implementación de sistemas de distribución masiva de alertas (como redes de telefonía o sistemas de broadcasting) no está incluida.
-		\item Se desarrollará una interfaz para el sistema de alerta temprana, pero la distribución a gran escala deberá ser manejada por las autoridades competentes.
+		\item La implementación de sistemas de distribución masiva de alertas no está incluida.
 		\end{itemize}
-	\item Integración con Sistemas Externos:
+	\item Integración con sistemas externos:
 		\begin{itemize}
 		\item La integración completa con otros sistemas de gestión de emergencias o bases de datos externas fuera del ámbito meteorológico no se incluye.
 		\item El alcance del proyecto no contempla la integración directa con sistemas externos.
@@ -231,17 +228,14 @@ El proyecto no incluye:
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que: 
 
 \begin{itemize}
-	\item Supuesto 1.
-	\item Supuesto 2.
-	\item ...
+	\item Se tendrá acceso continuo a una fuente de datos provista por la DINAC.
+	\item La DINAC cuenta con una infraestructura tecnológica adecuada que permitirá el correcto entrenamiento y despliegue de la solución.
+	\item Se fijarán y desarrollarán reuniones periódicas con el cliente para abordar temas relacionados con el proyecto.
+	\item Se mantendrá la relación mediante el programa de vinculación con la DINAC hasta finalizar el desarrollo del proyecto.
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
