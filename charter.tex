@@ -240,41 +240,33 @@ Para el desarrollo del presente proyecto se supone que:
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben enumerarse y de ser posible estar agrupados por afinidad, por ejemplo:
-
 \begin{enumerate}
 	\item Requerimientos funcionales:
 		\begin{enumerate}
-			\item El sistema debe...
-			\item Tal componente debe...
-			\item El usuario debe poder...
+			\item El sistema debe ser capaz de recolectar datos meteorológicos históricos y actuales de la base de datos de la DINAC.
+			\item El sistema debe implementar y entrenar múltiples modelos de IA para determinar su conveniencia en términos de precisión, eficiencia y robustez.
+			\item El sistema debe superar a los modelos actuales en términos precisión.
+			\item El sistema debe emitir advertencias tempranas basadas en las predicciones de eventos extremos.
+		\end{enumerate}
+	\item Requerimientos No funcionales:
+		\begin {enumerate}
+			\item La solución debe estar programada de forma modular para que el código de sus características funcionales pueda ser fácilmente reutilizado y/o escalado.
+			\item El sistema debe ser capaz de procesar grandes volúmenes de datos sin degradar su rendimiento.
+		\end{enumerate}
+	\item Requerimientos de datos:
+		\begin {enumerate}
+			\item Los datos meteorológicos históricos y actuales deben estar disponibles en la base de datos de la DINAC.
+			\item Deben definirse formatos estándar para la importación y exportación de datos.
 		\end{enumerate}
 	\item Requerimientos de documentación:
 		\begin{enumerate}
-			\item Requerimiento 1.
-			\item Requerimiento 2 (prioridad menor)
+			\item Debe crearse una documentación técnica del sistema, incluyendo su arquitectura, diseño y funcionamiento.
 		\end{enumerate}
-	\item Requerimiento de testing...
-	\item Requerimientos de la interfaz...
-	\item Requerimientos interoperabilidad...
-	\item etc...
+	\item Requerimientos de testing:
+		\begin{enumerate}
+			\item La efectividad de los modelos será acordada y evaluada en conjunto con el cliente.
+		\end{enumerate}
 \end{enumerate}
-
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
-
-\textbf{¡¡¡No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!}
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
-	\item Ser específico: no dejar lugar a confusiones.
-	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
-\end{consigna}
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
