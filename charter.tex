@@ -59,8 +59,8 @@ codirector, % Uncomment to add a codirector to the title page
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 5 inclusive                & {día} de {mes} de 202X \\ \hline
-%2      & Se completa hasta el punto 9 inclusive
+1      & Se completa hasta el punto 5 inclusive                & 2 de julio de 2024 \\ \hline
+2      & Se completa hasta el punto 9 inclusive				 & 9 de julio de 2024 \\ \hline
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & {día} de {mes} de 202X \\ \hline
@@ -151,6 +151,7 @@ una vez evaluado y ajustado el modelo, se procederá a realizar predicciones sob
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
 Cliente       & \clientename      &\empclientename	&   Gerente de Climatología     	\\ \hline
+Product Owner       & \clientename      &\empclientename	&   Gerente de Climatología     	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director del Trabajo Final \\ \hline
 Usuario final & Sidney da Silva Viana                  & Central Hidroeléctrica Itaipu             	& Gerente de tecnologías en SI        	\\ \hline
@@ -271,18 +272,31 @@ Para el desarrollo del presente proyecto se supone que:
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-\begin{consigna}{red}
-Descripción: en esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
-
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia.
-
-El formato propuesto es: 
 \begin{enumerate}
-\item ``Como [rol] quiero [tal cosa] para [tal otra cosa]."
+\item Como Product Owner, quiero obtener datos meteorológicos históricos y actuales de la base de datos de la DINAC para realizar análisis precisos.
 
-\textit{Story points}: 8 (complejidad: 3, dificultad: 2, incertidumbre: 3)
+\textit{Story points}: 6 (complejidad: 2, dificultad: 2, incertidumbre: 2)
+
+\item Como Product Owner, quiero limpiar y normalizar los datos meteorológicos para garantizar su calidad ante los modelos de IA que serán entrenados.
+
+\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+
+\item Como Product Owner, quiero aplicar técnicas de imputación de valores faltantes para manejar datos incompletos.
+
+\textit{Story points}: 7 (complejidad: 3, dificultad: 2, incertidumbre: 2)
+
+\item Como Product Owner, quiero utilizar modelos de IA para predecir eventos climáticos extremos y mejorar la precisión de las predicciones.
+
+\textit{Story points}: 10 (complejidad: 4, dificultad: 3, incertidumbre: 3)
+
+\item Como Usuario, quiero comparar los resultados obtenidos de lo modelos de IA entrenados con el modelo actual para seleccionar el más adecuado para nuestras necesidades.
+
+\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+
+\item Como Product Owner, quiero emitir alertas tempranas de eventos climáticos extremos para tomar decisiones informadas y mitigar impactos.
+
+\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
 \end{enumerate}
-\end{consigna}
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
