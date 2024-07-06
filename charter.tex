@@ -5,17 +5,17 @@ codirector, % Uncomment to add a codirector to the title page
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Predicción de eventos climáticos y meteorológicos extremos utilizando inteligencia artificial} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
-\posgrado{Carrera de Especialización en Sistemas Embebidos} 
+%\posgrado{Carrera de Especialización en Sistemas Embebidos} 
 %\posgrado{Carrera de Especialización en Internet de las Cosas} 
-%\posgrado{Carrera de Especialización en Inteligencia Artificial}
+\posgrado{Carrera de Especialización en Inteligencia Artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 % IMPORTANTE: no omitir titulaciones ni tildación en los nombres, también se recomienda escribir los nombres completos (tal cual los tienen en su documento)
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Título y Nombre del autor}
+\autor{Ing. Sevann Radhak Triztan}
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Título y Nombre del director}
@@ -24,12 +24,13 @@ codirector, % Uncomment to add a codirector to the title page
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+
+\cliente{Carlos Roberto Salinas}
+\empresaCliente{Dirección de Meteorología e Hidrología}
  
-\fechaINICIO{30 de abril de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{18 de junio de 2023} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{15 de mayo de 2024}	%Fecha de defensa pública del trabajo final
+\fechaINICIO{18 de junio de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{13 de agosto de 2024} 	%Fecha de final de cursada de GdP
+\fechaFINALTrabajo{17 de diciembre de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -58,8 +59,8 @@ codirector, % Uncomment to add a codirector to the title page
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 5 inclusive                & {día} de {mes} de 202X \\ \hline
-%2      & Se completa hasta el punto 9 inclusive
+1      & Se completa hasta el punto 5 inclusive                & 2 de julio de 2024 \\ \hline
+2      & Se completa hasta el punto 9 inclusive				 & 9 de julio de 2024 \\ \hline
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & {día} de {mes} de 202X \\ \hline
@@ -84,7 +85,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de una caldera industrial}. El trabajo tendrá un presupuesto preliminar estimado de \textcolor{red}{600} horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá esencialmente en la implementación de técnicas de inteligencia artificial (IA) para mejorar las predicciones de eventos climáticos y meteorológicos extremos. El trabajo tendrá un presupuesto preliminar estimado de 600 horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -100,31 +101,16 @@ Se adjunta a esta acta la planificación inicial.
 \end{table}
 
 
-
-
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección. En cada entrega parcial deben eliminar los comandos begin y end del bloque consigna de las secciones que hayan completado.
-El objetivo es que el lector, en una o dos páginas, exponga de qué se trata el proyecto y cuáles son sus desafíos, cuál es la motivación para realizarlo y su importancia.
+El cambio climático y los eventos meteorológicos extremos presentan desafíos críticos a nivel global y local, afectando la vida, la infraestructura y la economía. En Paraguay, los eventos extremos como olas de calor, sequías y precipitaciones intensas han aumentado, destacando la necesidad urgente de mejorar la precisión y la efectividad de los pronósticos meteorológicos. 
 
-Se debe introducir el contexto del proyecto, el estado del arte en la temática, describir la propuesta de valor, cuál es el problema que atiende y cuál es la solución que se propone. Se debe dar una descripción funcional de la solución que incluya un diagrama en bloques.
+Las actuales técnicas de monitoreo y predicción no siempre resultan suficientes para emitir advertencias tempranas y precisas. Este proyecto enfrenta el reto de adquirir, analizar y aplicar conocimientos para resolver problemas climatológicos complejos y busca utilizar la inteligencia artificial (IA) para analizar grandes volúmenes de datos meteorológicos y climáticos, tanto actuales como históricos, con el fin de mejorar la precisión de las predicciones y la toma de decisiones.
 
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
+Este proyecto, propuesto por la \empclientename\hspace{1px} (DINAC) y el Parque Tecnológico Itaipu de Paraguay, busca abordar los desafíos actuales en la predicción de eventos climáticos extremos mediante el uso de herramientas de IA, contribuyendo así a mitigar los impactos del cambio climático en Paraguay y la región.
 
-\begin{itemize}
-	\item ¿Cuál es el contexto del proyecto, es un emprendimiento personal, un proyecto para una empresa, es parte del programa de vinculación con empresas del posgrado?
-	\item ¿Existen o aplican condiciones especiales al proyecto, financiamiento de algún programa público o privado, acuerdos de confidencialidad, acuerdos sobre la propiedad intelectual de los entregables u otros?
-	\item ¿Cómo se compara la solución propuesta con el estado del arte en el campo de aplicación? ¿En qué aspectos destaca?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está la solución que se propone?
-	\item ¿Cuáles son las características del cliente (el adoptante de los entregables del proyecto) qué valora, qué necesita?
-	\item ¿Por dónde pasa la innovación?
-\end{itemize}
-
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y descripción funcional de la solución propuesta.
-
-Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase como la siguiente: ``En la figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''.  La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+En la figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observan los pasos propuestos para el desarrollo del presente proyecto. 
 
 \begin{figure}[htpb]
 \centering 
@@ -133,23 +119,29 @@ Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase 
 \label{fig:diagBloques}
 \end{figure}
 
+\textbf{Descarga de datos:}
+la \empclientename\hspace{1px} pondrá a disposición una base de datos para la obtención de datos históricos y actuales de las condiciones meteorológicas.
+
+\textbf{Preprocesamiento de datos:}
+se llevará a cabo un análisis de datos en crudo con el objetivo de dar tratamiento a datos vacíos, inconsistentes o conflictivos.
+
+\textbf{Procesamiento de datos:}
+serán aplicadas técnicas como la imputación de valores faltantes, reducción de dimensionalidad, estimación e interpretación de valores representativos, entre otras.
+
+\textbf{Definición y compilación del modelo:}
+diferentes modelos y técnicas serán propuestas, entrenadas y valuadas para comparar determinar el mejor modelo a utilizar.
+
+\textbf{Entrenamiento y evaluación del modelo:}
+el modelo seleccionado será entrenado con los datos procesados y evaluado aplicando técnicas avanzadas y métricas específicas para determinar su precisión y robustez.
+
+\textbf{Predicción:}
+una vez evaluado y ajustado el modelo, se procederá a realizar predicciones sobre los datos meteorológicos futuros, proporcionando información crítica para la toma de decisiones en la gestión de eventos climáticos extremos.
+
+
 \vspace{25px}
-
-El tamaño del texto en TODAS las figuras debe ser adecuado \textbf{para que NO pase lo que ocurre en la figura \ref{fig:diagBloques}}, donde el lector debe esforzarse para poder leer el texto. 
-
-Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama. Se recomienda evitar colores primarios (como rojo, verde o cyan) y usar la gama de colores pastel.
-\end{consigna}
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
-
-\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red} 
-\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código. 
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces \textbf{solo dejarla en el rol más importante}. 
-
-Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente. Si una persona es el Responsable, \textbf{no debe ser colocado también como miembro del equipo}.
-
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -158,196 +150,218 @@ Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Cliente       & \clientename      &\empclientename	&   Gerente de Climatología     	\\ \hline
+Product Owner       & \clientename      &\empclientename	&   Gerente de Climatología     	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director del Trabajo Final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Usuario final & Sidney da Silva Viana                  & Central Hidroeléctrica Itaipu             	& Gerente de tecnologías en SI        	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
 \begin{itemize}
-	\item Orientador: la Dra. Ing. María Gómez es experta en la temática y va a ayudar con la definición de los requerimientos y el desarrollo del firmware del embebido.
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
+	\item Cliente: el Dr. Ing. Sidney da Silva Vianna es experto en la temática, ejerce como Gerente de tecnologías en Sistemas de la Información (SI) y va a ayudar con la definición de los requerimientos y el desarrollo de la solución.
+	\item Usuario final: Carlos Roberto Salinas, ejerce como 	Gerente de Climatología en la Dirección de Meteorología e Hidrología y la Dirección Nacional de Aeronáutica Civil. Nos proporcionara información útil respecto a las expectativas reales del usuario.
 \end{itemize}
-
-\end{consigna} % este comando se debe borrar para la entrega, junto con la contraparte \begin{consigna}{red}
-
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que continúe con la idea de la frase ``el propósito de este proyecto es...'' (omitir la frase, ya que está en el título de la sección).
-\end{consigna}
+Desarrollar un sistema avanzado de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando una respuesta más efectiva ante los fenómenos climáticos adversos y contribuyendo a la migración de sus impactos en Paraguay y sus alrededores.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
-
-Se refiere al trabajo que se va a hacer para entregar el producto o resultado especificado. 
-
-Explicitar todo lo quede comprendido dentro del alcance del proyecto. Por ejemplo:
-
 El proyecto incluye:
 \begin{itemize}
-	\item Ítem 1.
-	\item Ítem 2.
+	\item Recolección y preprocesamiento de datos:
 		\begin{itemize}
-		\item Subítem 1.
-		\item Subítem 2.
-		\item ...
+		\item Obtención de datos meteorológicos históricos y actuales almacenados en la base de
+datos de la DINAC.
+		\item Limpieza, normalización y preprocesamiento de los datos para su uso en los modelos de IA.
 		\end{itemize}
-	\item ...
+	\item Investigación y desarrollo de algoritmos de IA:
+		\begin{itemize}
+		\item Identificación y selección de algoritmos de IA adecuados para el análisis de datos meteorológicos.
+		\item Desarrollo y ajuste de modelos de IA para predicción climática a corto y largo plazo.
+		\end{itemize}
+	\item Implementación de la Plataforma de predicción:
+		\begin{itemize}
+		\item Diseño y desarrollo de una plataforma tecnológica que integre los modelos de IA desarrollados.
+		\item Implementación de interfaces de usuario para la visualización de predicciones y alertas.
+		\end{itemize}
+	\item Validación y optimización de modelos:
+		\begin{itemize}
+		\item Pruebas y validación de los modelos de predicción utilizando datos históricos y actuales.
+		\item Optimización continua de los modelos para mejorar su precisión y eficiencia.
+		\end{itemize}
+	\item Gestión y monitoreo del proyecto:
+		\begin{itemize}
+		\item Establecimiento de un cronograma detallado y seguimiento del progreso del proyecto.
+		\item Gestión de riesgos y resolución de problemas durante el desarrollo del proyecto.
+		\end{itemize}
 	
 \end{itemize}
 
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
+El proyecto no incluye:
+\begin{itemize}
+	\item Implementación de infraestructura física:
+		\begin{itemize}
+		\item La construcción, instalación o conexión a estaciones meteorológicas no está incluida.
+		\item La actualización o mejora de la infraestructura física existente de recopilación de datos meteorológicos no forma parte del alcance del proyecto.
+		\end{itemize}
+	\item Mantenimiento a largo plazo:
+		\begin{itemize}
+		\item El mantenimiento continuo de la plataforma y los sistemas desarrollados, después de la finalización del proyecto, no está incluido.
+		\item No se llevará a cabo mantenimiento regular post-implementación.
+		\end{itemize}
+	\item Distribución y gestión de alertas:
+		\begin{itemize}
+		\item La implementación de sistemas de distribución masiva de alertas no está incluida.
+		\end{itemize}
+	\item Integración con sistemas externos:
+		\begin{itemize}
+		\item La integración completa con otros sistemas de gestión de emergencias o bases de datos externas fuera del ámbito meteorológico no se incluye.
+		\item El alcance del proyecto no contempla la integración directa con sistemas externos.
+		\end{itemize}
 
-\end{consigna}
-
+\end{itemize}
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que: 
 
 \begin{itemize}
-	\item Supuesto 1.
-	\item Supuesto 2.
-	\item ...
+	\item Se tendrá acceso continuo a una fuente de datos provista por la DINAC.
+	\item La DINAC cuenta con una infraestructura tecnológica adecuada que permitirá el correcto entrenamiento y despliegue de la solución.
+	\item Se fijarán y desarrollarán reuniones periódicas con el cliente para abordar temas relacionados con el proyecto.
+	\item Se mantendrá la relación mediante el programa de vinculación con la DINAC hasta finalizar el desarrollo del proyecto.
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben enumerarse y de ser posible estar agrupados por afinidad, por ejemplo:
-
 \begin{enumerate}
 	\item Requerimientos funcionales:
 		\begin{enumerate}
-			\item El sistema debe...
-			\item Tal componente debe...
-			\item El usuario debe poder...
+			\item El sistema debe ser capaz de recolectar datos meteorológicos históricos y actuales de la base de datos de la DINAC.
+			\item El sistema debe implementar y entrenar múltiples modelos de IA para determinar su conveniencia en términos de precisión, eficiencia y robustez.
+			\item El sistema debe superar a los modelos actuales en términos precisión.
+			\item El sistema debe emitir advertencias tempranas basadas en las predicciones de eventos extremos.
+		\end{enumerate}
+	\item Requerimientos No funcionales:
+		\begin {enumerate}
+			\item La solución debe estar programada de forma modular para que el código de sus características funcionales pueda ser fácilmente reutilizado y/o escalado.
+			\item El sistema debe ser capaz de procesar grandes volúmenes de datos sin degradar su rendimiento.
+		\end{enumerate}
+	\item Requerimientos de datos:
+		\begin {enumerate}
+			\item Los datos meteorológicos históricos y actuales deben estar disponibles en la base de datos de la DINAC.
+			\item Deben definirse formatos estándar para la importación y exportación de datos.
 		\end{enumerate}
 	\item Requerimientos de documentación:
 		\begin{enumerate}
-			\item Requerimiento 1.
-			\item Requerimiento 2 (prioridad menor)
+			\item Debe crearse una documentación técnica del sistema, incluyendo su arquitectura, diseño y funcionamiento.
 		\end{enumerate}
-	\item Requerimiento de testing...
-	\item Requerimientos de la interfaz...
-	\item Requerimientos interoperabilidad...
-	\item etc...
+	\item Requerimientos de testing:
+		\begin{enumerate}
+			\item La efectividad de los modelos será acordada y evaluada en conjunto con el cliente.
+		\end{enumerate}
 \end{enumerate}
-
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
-
-\textbf{¡¡¡No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!}
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
-	\item Ser específico: no dejar lugar a confusiones.
-	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
-\end{consigna}
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-\begin{consigna}{red}
-Descripción: en esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
-
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia.
-
-El formato propuesto es: 
 \begin{enumerate}
-\item ``Como [rol] quiero [tal cosa] para [tal otra cosa]."
+\item Como Product Owner, quiero obtener datos meteorológicos históricos y actuales de la base de datos de la DINAC para realizar análisis precisos.
 
-\textit{Story points}: 8 (complejidad: 3, dificultad: 2, incertidumbre: 3)
+\textit{Story points}: 6 (complejidad: 2, dificultad: 2, incertidumbre: 2)
+
+\item Como Product Owner, quiero limpiar y normalizar los datos meteorológicos para garantizar su calidad ante los modelos de IA que serán entrenados.
+
+\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+
+\item Como Product Owner, quiero aplicar técnicas de imputación de valores faltantes para manejar datos incompletos.
+
+\textit{Story points}: 7 (complejidad: 3, dificultad: 2, incertidumbre: 2)
+
+\item Como Product Owner, quiero utilizar modelos de IA para predecir eventos climáticos extremos y mejorar la precisión de las predicciones.
+
+\textit{Story points}: 10 (complejidad: 4, dificultad: 3, incertidumbre: 3)
+
+\item Como Usuario, quiero comparar los resultados obtenidos de lo modelos de IA entrenados con el modelo actual para seleccionar el más adecuado para nuestras necesidades.
+
+\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+
+\item Como Product Owner, quiero emitir alertas tempranas de eventos climáticos extremos para tomar decisiones informadas y mitigar impactos.
+
+\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
 \end{enumerate}
-\end{consigna}
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
-\begin{consigna}{red}
-Los entregables del proyecto son (ejemplo):
-
 \begin{itemize}
-	\item Manual de usuario.
-	\item Diagrama de circuitos esquemáticos.
-	\item Código fuente del firmware.
-	\item Diagrama de instalación.
+	\item Documento de Especificación de Requerimientos.
+	\item Modelos de IA entrenados y evaluados.
+	\item Sistema de predicción implementado.
+	\item Informe Final del Proyecto.
+	\item Código fuente y recursos digitales.
 	\item Memoria del trabajo final.
-	\item etc...
 \end{itemize}
-\end{consigna}
 
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{consigna}{red}
-El WBS debe tener relación directa o indirecta con los requerimientos.  Son todas las actividades que se harán en el proyecto para dar cumplimiento a los requerimientos. Se recomienda mostrar el WBS mediante una lista indexada:
-
 \begin{enumerate}
-\item Grupo de tareas 1 (suma h)
+\item Grupo de Tareas 1: Recolección y preprocesamiento de datos (150 h)
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
+	\item Tarea 1: Definir y establecer la conexión con la base de datos de la DINAC (20 h)
+	\item Tarea 2: Desarrollar scripts para la extracción automática de datos históricos y actuales (20 h)
+	\item Tarea 3: Validar la integridad y calidad de los datos recolectados (20 h)
+	\item Tarea 4: Documentar el proceso de obtención de datos (10 h)
+	\item Tarea 5: Limpieza y normalización de datos para eliminar valores atípicos y errores (40 h)
+	\item Tarea 6: Aplicación de técnicas de imputación para manejar datos faltantes (40 h)
 	\end{enumerate}
-\item Grupo de tareas 2 (suma h)
+\item Grupo de Tareas 2: Desarrollo y Evaluación de Modelos de IA (200 h)
 	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
+	\item Tarea 7: Investigar y seleccionar algoritmos apropiados para el análisis de datos meteorológicos (30 h)
+	\item Tarea 8: Implementar los modelos seleccionados en el entorno de desarrollo (50 h)
+	\begin{enumerate}
+	\item Subtarea 8.1: Configurar el entorno de desarrollo para la implementación de modelos (10 h)	
+	\item Subtarea 8.2: Desarrollar el código base para el primer modelo de IA (20 h)
+	\item Subtarea 8.3: Desarrollar el código base para el segundo modelo de IA (20 h)
+	\end{enumerate}		
+	\item Tarea 9: Entrenar y ajustar los modelos con datos preprocesados (70 h)
+	\begin{enumerate}
+	\item Subtarea 9.1: Entrenar el primer modelo de IA con los datos preprocesados (20 h)
+	\item Subtarea 9.2: Entrenar el segundo modelo de IA con los datos preprocesados (20 h)
+	\item Subtarea 9.3: Realizar ajustes y optimizaciones en el primer modelo (15 h)
+	\item Subtarea 9.4: Realizar ajustes y optimizaciones en el segundo modelo (15 h)
+	\end{enumerate}	
+	\item Tarea 10: Comparar la precisión y eficiencia de los modelos implementados con el modelo actual (50 h)
+	\begin{enumerate}
+	\item Subtarea 10.1: Definir métricas y criterios de evaluación para los modelos (10 h)
+	\item Subtarea 10.2: Realizar pruebas de precisión y eficiencia en el primer modelo (20 h)
+	\item Subtarea 10.3: Realizar pruebas de precisión y eficiencia en el segundo modelo (20 h)
 	\end{enumerate}
-\item Grupo de tareas 3 (suma h)
-	\begin{enumerate}
-	\item Tarea 1 (tantas h)
-	\item Tarea 2 (tantas h)
-	\item Tarea 3 (tantas h)
-	\item Tarea 4 (tantas h)
-	\item Tarea 5 (tantas h)
+	\end{enumerate}
+\item Grupo de Tareas 3: Implementación del Sistema y Documentación (180 h)
+\begin{enumerate}
+	\item Tarea 11: Diseñar la arquitectura del sistema de predicción de eventos climáticos extremos (40 h)
+	\item Tarea 12: Implementar el proceso de emisión de predicciones y alertas (40 h)
+	\item Tarea 13: Integrar los modelos de IA con la plataforma desarrollada (40 h)
+	\item Tarea 14: Elaborar la documentación técnica del sistema y los manuales de usuario (20 h)
+	\item Realizar pruebas de aceptación con el cliente para validar la funcionalidad del sistema (40 h)
+	\end{enumerate}
+\item Tareas 4: Gestión del proyecto y presentación (70 h)
+\begin{enumerate}
+	\item Tarea 15: Gestionar riesgos y problemas durante el desarrollo del proyecto (40 h)
+	\item Tarea 16: Preparar la presentación pública del proyecto y demostración ante el tribunal (30 h)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: tantas.
-
-\textbf{¡Importante!:} la unidad de horas es h y va separada por espacio del número. Es incorrecto escribir ``23hs".
-
-\textbf{Se recomienda que no haya ninguna tarea que lleve más de 40 h.} De ser así se recomienda dividirla en tareas de menor duración.
-
-\end{consigna}
+Cantidad total de horas: 600 h.
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
