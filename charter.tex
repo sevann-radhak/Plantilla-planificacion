@@ -129,7 +129,7 @@ se llevará a cabo un análisis de datos en crudo con el objetivo de dar tratami
 serán aplicadas técnicas como la imputación de valores faltantes, reducción de dimensionalidad, estimación e interpretación de valores representativos, entre otras.
 
 \textbf{Definición y compilación del modelo:}
-diferentes modelos y técnicas serán propuestas, entrenadas y valuadas para comparar determinar el mejor modelo a utilizar.
+diferentes modelos y técnicas serán propuestas, entrenadas y evaluadas para determinar el mejor modelo a utilizar.
 
 \textbf{Entrenamiento y evaluación del modelo:}
 el modelo seleccionado será entrenado con los datos procesados y evaluado aplicando técnicas avanzadas y métricas específicas para determinar su precisión y robustez.
@@ -166,7 +166,7 @@ Usuario final & Dr. Sidney da Silva Viana                  & Central Hidroeléct
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-Desarrollar un sistema avanzado de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando una respuesta más efectiva ante los fenómenos climáticos adversos y contribuyendo a la migración de sus impactos en Paraguay y sus alrededores.
+Desarrollar un sistema avanzado de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando una respuesta más efectiva ante los fenómenos climáticos adversos y contribuyendo a la mitigación de sus impactos en Paraguay y sus alrededores.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
@@ -212,7 +212,7 @@ El proyecto no incluye:
 	\item Mantenimiento a largo plazo:
 		\begin{itemize}
 		\item El mantenimiento continuo de la plataforma y los sistemas desarrollados, después de la finalización del proyecto, no está incluido.
-		\item No se llevará a cabo mantenimiento regular post-implementación.
+		\item Las tareas de mantenimiento o soporte post-implementación.
 		\end{itemize}
 	\item Distribución y gestión de alertas:
 		\begin{itemize}
@@ -221,7 +221,7 @@ El proyecto no incluye:
 	\item Integración con sistemas externos:
 		\begin{itemize}
 		\item La integración completa con otros sistemas de gestión de emergencias o bases de datos externas fuera del ámbito meteorológico no se incluye.
-		\item El alcance del proyecto no contempla la integración directa con sistemas externos.
+		\item La integración directa con sistemas externos.
 		\end{itemize}
 
 \end{itemize}
@@ -236,7 +236,7 @@ Para el desarrollo del presente proyecto se supone que:
 	\item La DINAC cuenta con una infraestructura tecnológica adecuada que permitirá el correcto entrenamiento y despliegue de la solución.
 	\item Se fijarán y desarrollarán reuniones periódicas con el cliente para abordar temas relacionados con el proyecto.
 	\item Se mantendrá la relación mediante el programa de vinculación con la DINAC hasta finalizar el desarrollo del proyecto.
-	\item Se contará con la colaboración de expertos: se asume que será posible obtener la colaboración de expertos en el área que requerida, desde las cuestiones climatológicas hasta las que involucren técnicas de inteligencia artificial.
+	\item Se contará con la colaboración de expertos: se asume que será posible obtener la colaboración de expertos en el área que se requiera, desde las cuestiones climatológicas hasta las que involucren técnicas de inteligencia artificial.
 \end{itemize}
 
 \section{6. Requerimientos}
@@ -247,10 +247,10 @@ Para el desarrollo del presente proyecto se supone que:
 		\begin{enumerate}
 			\item El sistema debe ser capaz de recolectar datos meteorológicos históricos y actuales de la base de datos de la DINAC.
 			\item El sistema debe implementar y entrenar múltiples modelos de IA para determinar su conveniencia en términos de precisión, eficiencia y robustez.
-			\item El sistema debe superar a los modelos actuales en términos precisión.
+			\item El sistema debe superar a los modelos actuales en términos de precisión.
 			\item El sistema debe emitir advertencias tempranas basadas en las predicciones de eventos extremos.
 		\end{enumerate}
-	\item Requerimientos No funcionales:
+	\item Requerimientos no funcionales:
 		\begin {enumerate}
 			\item La solución debe estar programada de forma modular para que el código de sus características funcionales pueda ser fácilmente reutilizado y/o escalado.
 			\item El sistema debe ser capaz de procesar grandes volúmenes de datos sin degradar su rendimiento.
@@ -273,93 +273,117 @@ Para el desarrollo del presente proyecto se supone que:
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
+Las historias están valoradas en un sistema de puntaje (\textit{story points}) basado en la estimación de tres categorías: dificultad, complejidad e incertidumbre del trabajo en cada una. La escala de \textit{story points} es:
+
+\begin{itemize}
+\item Trivial: 1
+\item Bajo: 2
+\item Medio: 3
+\item Alto: 5 o más
+\end{itemize}
+
 \begin{enumerate}
 \item Como Product Owner, quiero obtener datos meteorológicos históricos y actuales de la base de datos de la DINAC para realizar análisis precisos.
 
-\textit{Story points}: 6 (complejidad: 2, dificultad: 2, incertidumbre: 2)
+\textit{Story points}: 8 (complejidad: 1, dificultad: 2, incertidumbre: 5)
 
 \item Como Product Owner, quiero limpiar y normalizar los datos meteorológicos para garantizar su calidad ante los modelos de IA que serán entrenados.
 
-\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+\textit{Story points}: 13 (complejidad: 5, dificultad: 5, incertidumbre: 3)
 
 \item Como Product Owner, quiero aplicar técnicas de imputación de valores faltantes para manejar datos incompletos.
 
-\textit{Story points}: 7 (complejidad: 3, dificultad: 2, incertidumbre: 2)
+\textit{Story points}: 8 (complejidad: 3, dificultad: 3, incertidumbre: 2)
 
 \item Como Product Owner, quiero utilizar modelos de IA para predecir eventos climáticos extremos y mejorar la precisión de las predicciones.
 
-\textit{Story points}: 10 (complejidad: 4, dificultad: 3, incertidumbre: 3)
+\textit{Story points}: 13 (complejidad: 5, dificultad: 5, incertidumbre: 3)
 
 \item Como Usuario, quiero comparar los resultados obtenidos de lo modelos de IA entrenados con el modelo actual para seleccionar el más adecuado para nuestras necesidades.
 
-\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+\textit{Story points}: 13 (complejidad: 5, dificultad: 3, incertidumbre: 5)
 
 \item Como Product Owner, quiero emitir alertas tempranas de eventos climáticos extremos para tomar decisiones informadas y mitigar impactos.
 
-\textit{Story points}: 9 (complejidad: 3, dificultad: 3, incertidumbre: 3)
+\textit{Story points}: 13 (complejidad: 3, dificultad: 5, incertidumbre: 5)
 \end{enumerate}
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
 \begin{itemize}
-	\item Documento de Especificación de Requerimientos.
+	\item Documento de especificación de requerimientos.
 	\item Modelos de IA entrenados y evaluados.
 	\item Sistema de predicción implementado.
-	\item Informe Final del Proyecto.
+	\item Informe final del proyecto.
 	\item Código fuente y recursos digitales.
 	\item Memoria del trabajo final.
 \end{itemize}
 
 \section{9. Desglose del trabajo en tareas}
-\label{sec:wbs}
+\label{sec
+}
 
 \begin{enumerate}
-\item Grupo de Tareas 1: Recolección y preprocesamiento de datos (150 h)
-	\begin{enumerate}
-	\item Tarea 1: Definir y establecer la conexión con la base de datos de la DINAC (20 h)
-	\item Tarea 2: Desarrollar scripts para la extracción automática de datos históricos y actuales (20 h)
-	\item Tarea 3: Validar la integridad y calidad de los datos recolectados (20 h)
-	\item Tarea 4: Documentar el proceso de obtención de datos (10 h)
-	\item Tarea 5: Limpieza y normalización de datos para eliminar valores atípicos y errores (40 h)
-	\item Tarea 6: Aplicación de técnicas de imputación para manejar datos faltantes (40 h)
-	\end{enumerate}
-\item Grupo de Tareas 2: Desarrollo y Evaluación de Modelos de IA (200 h)
-	\begin{enumerate}
-	\item Tarea 7: Investigar y seleccionar algoritmos apropiados para el análisis de datos meteorológicos (30 h)
-	\item Tarea 8: Implementar los modelos seleccionados en el entorno de desarrollo (50 h)
-	\begin{enumerate}
-	\item Subtarea 8.1: Configurar el entorno de desarrollo para la implementación de modelos (10 h)	
-	\item Subtarea 8.2: Desarrollar el código base para el primer modelo de IA (20 h)
-	\item Subtarea 8.3: Desarrollar el código base para el segundo modelo de IA (20 h)
-	\end{enumerate}		
-	\item Tarea 9: Entrenar y ajustar los modelos con datos preprocesados (70 h)
-	\begin{enumerate}
-	\item Subtarea 9.1: Entrenar el primer modelo de IA con los datos preprocesados (20 h)
-	\item Subtarea 9.2: Entrenar el segundo modelo de IA con los datos preprocesados (20 h)
-	\item Subtarea 9.3: Realizar ajustes y optimizaciones en el primer modelo (15 h)
-	\item Subtarea 9.4: Realizar ajustes y optimizaciones en el segundo modelo (15 h)
-	\end{enumerate}	
-	\item Tarea 10: Comparar la precisión y eficiencia de los modelos implementados con el modelo actual (50 h)
-	\begin{enumerate}
-	\item Subtarea 10.1: Definir métricas y criterios de evaluación para los modelos (10 h)
-	\item Subtarea 10.2: Realizar pruebas de precisión y eficiencia en el primer modelo (20 h)
-	\item Subtarea 10.3: Realizar pruebas de precisión y eficiencia en el segundo modelo (20 h)
-	\end{enumerate}
-	\end{enumerate}
-\item Grupo de Tareas 3: Implementación del Sistema y Documentación (180 h)
+\item Grupo de tareas 1: recolección y preprocesamiento de datos (130 h)
 \begin{enumerate}
-	\item Tarea 11: Diseñar la arquitectura del sistema de predicción de eventos climáticos extremos (40 h)
-	\item Tarea 12: Implementar el proceso de emisión de predicciones y alertas (40 h)
-	\item Tarea 13: Integrar los modelos de IA con la plataforma desarrollada (40 h)
-	\item Tarea 14: Elaborar la documentación técnica del sistema y los manuales de usuario (20 h)
-	\item Realizar pruebas de aceptación con el cliente para validar la funcionalidad del sistema (40 h)
-	\end{enumerate}
-\item Tareas 4: Gestión del proyecto y presentación (70 h)
+\item Tarea 1: definir y establecer la conexión con la base de datos de la DINAC (15 h)
+\item Tarea 2: desarrollar scripts para la extracción automática de datos históricos y actuales (15 h)
+\item Tarea 3: validar la integridad y calidad de los datos recolectados (15 h)
+\item Tarea 4: documentar el proceso de obtención de datos (10 h)
+\item Tarea 5: limpieza y normalización de datos para eliminar valores atípicos y errores (35 h)
+\item Tarea 6: aplicación de técnicas de imputación para manejar datos faltantes (40 h)
+\end{enumerate}
+\item Grupo de tareas 2: desarrollo y evaluación de modelos de IA (180 h)
 \begin{enumerate}
-	\item Tarea 15: Gestionar riesgos y problemas durante el desarrollo del proyecto (40 h)
-	\item Tarea 16: Preparar la presentación pública del proyecto y demostración ante el tribunal (30 h)
-	\end{enumerate}
+\item Tarea 7: investigar y seleccionar algoritmos apropiados para el análisis de datos meteorológicos (25 h)
+\item Tarea 8: implementar los modelos seleccionados en el entorno de desarrollo (45 h)
+\begin{enumerate}
+\item Subtarea 8.1: configurar el entorno de desarrollo para la implementación de modelos (10 h)
+\item Subtarea 8.2: desarrollar el código base para el primer modelo de IA (18 h)
+\item Subtarea 8.3: desarrollar el código base para el segundo modelo de IA (17 h)
+\end{enumerate}
+\item Tarea 9: entrenar y ajustar los modelos con datos preprocesados (60 h)
+\begin{enumerate}
+\item Subtarea 9.1: entrenar el primer modelo de IA con los datos preprocesados (18 h)
+\item Subtarea 9.2: entrenar el segundo modelo de IA con los datos preprocesados (17 h)
+\item Subtarea 9.3: realizar ajustes y optimizaciones en el primer modelo (12 h)
+\item Subtarea 9.4: realizar ajustes y optimizaciones en el segundo modelo (13 h)
+\end{enumerate}
+\item Tarea 10: comparar la precisión y eficiencia de los modelos implementados con el modelo actual (45 h)
+\begin{enumerate}
+\item Subtarea 10.1: definir métricas y criterios de evaluación para los modelos (10 h)
+\item Subtarea 10.2: realizar pruebas de precisión y eficiencia en el primer modelo (18 h)
+\item Subtarea 10.3: realizar pruebas de precisión y eficiencia en el segundo modelo (17 h)
+\end{enumerate}
+\end{enumerate}
+\item Grupo de tareas 3: implementación del Sistema y Documentación (160 h)
+\begin{enumerate}
+\item Tarea 11: diseñar la arquitectura del sistema de predicción de eventos climáticos extremos (35 h)
+\item Tarea 12: implementar el proceso de emisión de predicciones y alertas (35 h)
+\item Tarea 13: integrar los modelos de IA con la plataforma desarrollada (35 h)
+\item Tarea 14: elaborar la documentación técnica del sistema y los manuales de usuario (20 h)
+\item Tarea 15: realizar pruebas de aceptación con el cliente para validar la funcionalidad del sistema (35 h)
+\end{enumerate}
+\item Grupo de tareas 4: gestión del proyecto (40 h)
+\begin{enumerate}
+\item Tarea 16: reuniones con el cliente (10 h)
+\item Tarea 17: entregables GdP hasta sección 5 (4 h)
+\item Tarea 18: entregables GdP hasta sección 9 (6 h)
+\item Tarea 19: entregables GdP hasta sección 12 (6 h)
+\item Tarea 20: entregables GdP hasta sección 15 (4 h)
+\item Tarea 21: elaboración presentación GdP (5 h)
+\item Tarea 22: revisión y correcciones entregables GdP (5 h)
+\end{enumerate}
+\item Grupo de tareas 5: generación de entregables y proceso de cierre (90 h)
+\begin{enumerate}
+\item Tarea 23: inicio elaboración memoria técnica - Taller de Trabajo Final A (40 h)
+\item Tarea 24: revisión y correcciones de la memoria (5 h)
+\item Tarea 25: fin de elaboración memoria técnica - Taller de Trabajo Final B (30 h)
+\item Tarea 26: revisión y correcciones de la memoria (5 h)
+\item Tarea 27: elaboración presentación final (8 h)
+\item Tarea 28: revisión y correcciones de la presentación final (2 h)
+\end{enumerate}
 \end{enumerate}
 
 Cantidad total de horas: 600 h.
