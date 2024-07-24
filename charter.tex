@@ -32,7 +32,6 @@ codirector, % Uncomment to add a codirector to the title page
 \fechaFINALPlan{13 de agosto de 2024} 	%Fecha de final de cursada de GdP
 \fechaFINALTrabajo{en el mes de diciembre de 2024}	%Fecha de defensa pública del trabajo final
 
-
 \begin{document}
 
 \maketitle
@@ -306,6 +305,10 @@ Las historias están valoradas en un sistema de puntaje (\textit{story points}) 
 \item Como Product Owner, quiero emitir alertas tempranas de eventos climáticos extremos para tomar decisiones informadas y mitigar impactos.
 
 \textit{Story points}: 13 (complejidad: 3, dificultad: 5, incertidumbre: 5)
+
+\item Como Product Owner, quiero elaborar una publicación científica basada en los resultados obtenidos del proyecto para contribuir al conocimiento en el campo de la predicción de eventos climáticos extremos.
+
+\textit{Story points}: 8 (complejidad: 2, dificultad: 3, incertidumbre: 3)
 \end{enumerate}
 
 \section{8. Entregables principales del proyecto}
@@ -318,6 +321,7 @@ Las historias están valoradas en un sistema de puntaje (\textit{story points}) 
 	\item Informe final del proyecto.
 	\item Código fuente y recursos digitales.
 	\item Memoria del trabajo final.
+	\item Publicación científica basada en los resultados del proyecto.
 \end{itemize}
 
 \section{9. Desglose del trabajo en tareas}
@@ -325,68 +329,67 @@ Las historias están valoradas en un sistema de puntaje (\textit{story points}) 
 }
 
 \begin{enumerate}
-\item Grupo de tareas 1: recolección y preprocesamiento de datos (130 h)
-\begin{enumerate}
-\item Tarea 1: definir y establecer la conexión con la base de datos de la DINAC (15 h)
-\item Tarea 2: desarrollar scripts para la extracción automática de datos históricos y actuales (15 h)
-\item Tarea 3: validar la integridad y calidad de los datos recolectados (15 h)
-\item Tarea 4: documentar el proceso de obtención de datos (10 h)
-\item Tarea 5: limpieza y normalización de datos para eliminar valores atípicos y errores (35 h)
-\item Tarea 6: aplicación de técnicas de imputación para manejar datos faltantes (40 h)
-\end{enumerate}
+\item Grupo de tareas 1: recolección y preprocesamiento de datos (100 h)
+	\begin{enumerate}
+	\item Tarea 1: definir y establecer la conexión con la base de datos de la DINAC (20 h)
+	\item Tarea 2: desarrollar scripts para la extracción automática de datos históricos y actuales (10 h)
+	\item Tarea 3: validar la integridad y calidad de los datos recolectados (10 h)
+	\item Tarea 4: documentar el proceso de obtención de datos (5 h)
+	\item Tarea 5: limpieza y normalización de datos para eliminar valores atípicos y errores (25 h)
+	\item Tarea 6: aplicación de técnicas de imputación para manejar datos faltantes (30 h)
+	\end{enumerate}
 \item Grupo de tareas 2: desarrollo y evaluación de modelos de IA (180 h)
+	\begin{enumerate}
+	\item Tarea 7: investigar y seleccionar algoritmos apropiados para el análisis de datos meteorológicos (30 h)
+	\item Tarea 8: implementar los modelos seleccionados en el entorno de desarrollo (50 h)
+	\begin{enumerate}
+	\item Subtarea 8.1: configurar el entorno de desarrollo para la implementación de modelos (10 h)	
+	\item Subtarea 8.2: desarrollar el código base para el primer modelo de IA (20 h)
+	\item Subtarea 8.3: desarrollar el código base para el segundo modelo de IA (20 h)
+	\end{enumerate}		
+	\item Tarea 9: entrenar y ajustar los modelos con datos preprocesados (60 h)
+	\begin{enumerate}
+	\item Subtarea 9.1: entrenar el primer modelo de IA con los datos preprocesados (20 h)
+	\item Subtarea 9.2: entrenar el segundo modelo de IA con los datos preprocesados (20 h)
+	\item Subtarea 9.3: realizar ajustes y optimizaciones en el primer modelo (10 h)
+	\item Subtarea 9.4: realizar ajustes y optimizaciones en el segundo modelo (10 h)
+	\end{enumerate}	
+	\item Tarea 10: comparar la precisión y eficiencia de los modelos implementados con el modelo actual (40 h)
+	\begin{enumerate}
+	\item Subtarea 10.1: definir métricas y criterios de evaluación para los modelos (10 h)
+	\item Subtarea 10.2: realizar pruebas de precisión y eficiencia en el primer modelo (15 h)
+	\item Subtarea 10.3: realizar pruebas de precisión y eficiencia en el segundo modelo (15 h)
+	\end{enumerate}
+	\end{enumerate}
+\item Grupo de tareas 3: implementación del sistema y documentación (150 h)
 \begin{enumerate}
-\item Tarea 7: investigar y seleccionar algoritmos apropiados para el análisis de datos meteorológicos (25 h)
-\item Tarea 8: implementar los modelos seleccionados en el entorno de desarrollo (45 h)
+	\item Tarea 11: diseñar la arquitectura del sistema de predicción de eventos climáticos extremos (40 h)
+	\item Tarea 12: implementar el proceso de emisión de predicciones y alertas (40 h)
+	\item Tarea 13: integrar los modelos de IA con la plataforma desarrollada (30 h)
+	\item Tarea 14: elaborar la documentación técnica del sistema y los manuales de usuario (20 h)
+	\item Tarea 15: realizar pruebas de aceptación con el cliente para validar la funcionalidad del sistema (20 h)
+	\end{enumerate}
+\item Grupo de tareas 4: gestión del proyecto y presentación (50 h)
 \begin{enumerate}
-\item Subtarea 8.1: configurar el entorno de desarrollo para la implementación de modelos (10 h)
-\item Subtarea 8.2: desarrollar el código base para el primer modelo de IA (18 h)
-\item Subtarea 8.3: desarrollar el código base para el segundo modelo de IA (17 h)
-\end{enumerate}
-\item Tarea 9: entrenar y ajustar los modelos con datos preprocesados (60 h)
+	\item Tarea 16: gestionar riesgos y problemas durante el desarrollo del proyecto (30 h)
+	\item Tarea 17: preparar la presentación pública del proyecto y demostración ante el tribunal (20 h)
+	\end{enumerate}
+\item Grupo de tareas 5: generación de entregables y proceso de cierre (60 h)
 \begin{enumerate}
-\item Subtarea 9.1: entrenar el primer modelo de IA con los datos preprocesados (18 h)
-\item Subtarea 9.2: entrenar el segundo modelo de IA con los datos preprocesados (17 h)
-\item Subtarea 9.3: realizar ajustes y optimizaciones en el primer modelo (12 h)
-\item Subtarea 9.4: realizar ajustes y optimizaciones en el segundo modelo (13 h)
-\end{enumerate}
-\item Tarea 10: comparar la precisión y eficiencia de los modelos implementados con el modelo actual (45 h)
+	\item Tarea 18: inicio de la elaboración de la memoria técnica (20 h)
+	\item Tarea 19: revisión y correcciones de la memoria técnica (5 h)
+	\item Tarea 20: finalización de la elaboración de la memoria técnica (20 h)
+	\item Tarea 21: revisión y correcciones de la memoria técnica final (5 h)
+	\item Tarea 22: elaboración de la presentación final (8 h)
+	\item Tarea 23: revisión y correcciones de la presentación final (2 h)
+	\end{enumerate}
+\item Grupo de tareas 6: elaboración de una publicación científica (60 h)
 \begin{enumerate}
-\item Subtarea 10.1: definir métricas y criterios de evaluación para los modelos (10 h)
-\item Subtarea 10.2: realizar pruebas de precisión y eficiencia en el primer modelo (18 h)
-\item Subtarea 10.3: realizar pruebas de precisión y eficiencia en el segundo modelo (17 h)
+	\item Tarea 24: investigación y recopilación de información relevante (10 h)
+	\item Tarea 25: redacción del artículo científico (30 h)
+	\item Tarea 26: revisión y corrección del artículo científico (20 h)
+	\end{enumerate}
 \end{enumerate}
-\end{enumerate}
-\item Grupo de tareas 3: implementación del Sistema y Documentación (160 h)
-\begin{enumerate}
-\item Tarea 11: diseñar la arquitectura del sistema de predicción de eventos climáticos extremos (35 h)
-\item Tarea 12: implementar el proceso de emisión de predicciones y alertas (35 h)
-\item Tarea 13: integrar los modelos de IA con la plataforma desarrollada (35 h)
-\item Tarea 14: elaborar la documentación técnica del sistema y los manuales de usuario (20 h)
-\item Tarea 15: realizar pruebas de aceptación con el cliente para validar la funcionalidad del sistema (35 h)
-\end{enumerate}
-\item Grupo de tareas 4: gestión del proyecto (GdP) (40 h)
-\begin{enumerate}
-\item Tarea 16: reuniones con el cliente (10 h)
-\item Tarea 17: entregables GdP hasta sección 5 (4 h)
-\item Tarea 18: entregables GdP hasta sección 9 (6 h)
-\item Tarea 19: entregables GdP hasta sección 12 (6 h)
-\item Tarea 20: entregables GdP hasta sección 15 (4 h)
-\item Tarea 21: elaboración presentación GdP (5 h)
-\item Tarea 22: revisión y correcciones entregables GdP (5 h)
-\end{enumerate}
-\item Grupo de tareas 5: generación de entregables y proceso de cierre (90 h)
-\begin{enumerate}
-\item Tarea 23: inicio elaboración memoria técnica - Taller de Trabajo Final A (40 h)
-\item Tarea 24: revisión y correcciones de la memoria (5 h)
-\item Tarea 25: fin de elaboración memoria técnica - Taller de Trabajo Final B (30 h)
-\item Tarea 26: revisión y correcciones de la memoria (5 h)
-\item Tarea 27: elaboración presentación final (8 h)
-\item Tarea 28: revisión y correcciones de la presentación final (2 h)
-\end{enumerate}
-\end{enumerate}
-
-Cantidad total de horas: 600 h.
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
@@ -414,90 +417,86 @@ Es recomendable usar colores y un cuadro indicativo describiendo qué representa
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
 
-\begin{consigna}{red}
-Existen muchos programas y recursos \textit{online} para hacer diagramas de Gantt, entre los cuales destacamos:
+En la figura \ref{fig:ganttchart} se observa el diagrama de Gantt del proyecto.
 
-\begin{itemize}
-\item Planner
-\item GanttProject
-\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-\end{itemize}
-
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
-Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. 
-En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-Las fechas pueden ser calculadas utilizando alguna de las herramientas antes citadas. Sin embargo, el siguiente ejemplo
-fue elaborado utilizando 
-\href{https://docs.google.com/spreadsheets/d/1fBz8NhSpc4tkkhz3KjJCbh1nR_ltDkfEcZi4tZXduqs}{esta hoja de cálculo}.
-
-Es importante destacar que el ancho del diagrama estará dado por la longitud del texto utilizado para las tareas 
-(Ejemplo: tarea 1, tarea 2, etcétera) y el valor \textit{x unit}. Para mejorar la apariencia del diagrama, es necesario
-ajustar este valor y, quizás, acortar los nombres de las tareas.
+\begin{landscape}
+\centering 
 
 \begin{figure}[htpb]
   \begin{center}
     \begin{ganttchart}[
       time slot unit=day,
       time slot format=isodate,
-      x unit=0.038cm,
-      y unit title=0.7cm,
-      y unit chart=0.6cm,
-      milestone/.append style={xscale=4}
-      ]{2021-03-05}{2021-12-16}
-      \gantttitlecalendar*{2021-03-05}{2021-12-16}{year} \\
-      \gantttitlecalendar*{2021-03-05}{2021-12-16}{month} \\
-      \ganttgroup{Duración Total}{2021-03-05}{2021-12-16} \\
-      %%%%%%%%%%%%%%%%%Organización
-      \ganttgroup{Organización}{2021-03-05}{2021-04-16} \\
-      \ganttbar{Planificación del proyecto}{2021-03-05}{2021-04-15} \\
-      %%%%%%%%%%%%%%%%%Ejecución
-      \ganttgroup{Ejecución}{2021-04-16}{2021-10-21} \\
-      \ganttbar{Tarea 1}{2021-04-16}{2021-04-29} \\
-      \ganttbar{Tarea 2}{2021-04-30}{2021-05-13} \\
-      \ganttbar{Tarea 3}{2021-05-14}{2021-05-27} \\
-      \ganttbar{Tarea 4}{2021-05-28}{2021-07-12} \\
-      \ganttbar{Tarea 5}{2021-07-13}{2021-08-09} \\
-      \ganttbar{Tarea 6}{2021-08-10}{2021-09-23} \\
-      \ganttbar{Tarea 7}{2021-09-24}{2021-09-30} \\
-      \ganttbar{Tarea 8}{2021-10-01}{2021-10-14} \\
-      \ganttbar{Tarea 9}{2021-10-15}{2021-10-21} \\
-      % %%%%%%%%%%%%%%%%%Finalización
-      \ganttgroup{Finalización}{2021-10-22}{2021-12-16} \\
-      \ganttbar{Memoria v1}{2021-10-22}{2021-11-04} \\
-      \ganttbar{Memoria v2}{2021-11-05}{2021-11-18} \\
-      \ganttbar{Memoria final}{2021-11-19}{2021-12-02} \\
-      % La fecha del siguiente milestone es la fecha en que terminamos la memoria
-      \ganttmilestone{Enviar memoria al director}{2021-12-02} \\
-      \ganttbar{Elaborar la presentación}{2021-12-03}{2021-12-16} \\
-      \ganttmilestone{Ensayo de la presentación}{2021-12-16} \\
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      x unit=0.1cm,
+      y unit title=0.5cm,
+      y unit chart=0.4cm,
+      milestone/.append style={xscale=4},
+      vgrid,
+      hgrid,
+      bar/.append style={fill=blue!50},
+      bar label font=\tiny,
+      group/.append style={fill=blue!20},
+      group label font=\tiny,
+      bar height=0.6
+      ]{2024-07-01}{2024-12-31}
+      
+      % Títulos
+      \gantttitlecalendar*{2024-07-01}{2024-12-31}{year} \\
+      \gantttitlecalendar*{2024-07-01}{2024-12-31}{month} \\
+      
+      % Duración total del proyecto
+      \ganttgroup{1.0: Duración Total}{2024-07-01}{2024-12-31} \\
+      
+      % Grupo de tareas 1: Recolección y preprocesamiento de datos
+      \ganttgroup{1.1: Recolección y preprocesamiento de datos}{2024-08-01}{2024-12-01} \\
+      \ganttbar[name=T1]{1.1.1: Definir y establecer conexión}{2024-08-01}{2024-08-07} \\
+      \ganttbar[name=T2]{1.1.2: Desarrollar scripts de extracción}{2024-08-08}{2024-08-14} \\
+      \ganttbar[name=T3]{1.1.3: Validar integridad y calidad de datos}{2024-08-15}{2024-08-21} \\
+      \ganttbar[name=T4]{1.1.4: Documentar proceso de obtención}{2024-08-22}{2024-08-25} \\
+      \ganttbar[name=T5]{1.1.5: Limpieza y normalización de datos}{2024-08-26}{2024-09-14} \\
+      \ganttbar[name=T6]{1.1.6: Aplicación de técnicas de imputación}{2024-09-15}{2024-12-01} \\
+      
+      % Grupo de tareas 2: Desarrollo y evaluación de modelos de IA
+      \ganttgroup{1.2: Desarrollo y evaluación de modelos de IA}{2024-08-01}{2024-12-01} \\
+      \ganttbar[name=T7]{1.2.1: Investigar y seleccionar algoritmos}{2024-08-01}{2024-08-14} \\
+      \ganttbar[name=T8]{1.2.2: Implementar modelos seleccionados}{2024-08-15}{2024-09-14} \\
+      \ganttbar[name=T9]{1.2.3: Entrenar y ajustar modelos}{2024-09-15}{2024-11-15} \\
+      \ganttbar[name=T10]{1.2.4: Comparar precisión y eficiencia}{2024-11-16}{2024-12-01} \\
+      
+      % Grupo de tareas 3: Implementación del sistema y documentación
+      \ganttgroup{1.3: Implementación del sistema y documentación}{2024-08-01}{2024-12-01} \\
+      \ganttbar[name=T11]{1.3.1: Diseñar la arquitectura del sistema}{2024-08-01}{2024-08-14} \\
+      \ganttbar[name=T12]{1.3.2: Implementar proceso de predicciones y alertas}{2024-08-15}{2024-09-15} \\
+      \ganttbar[name=T13]{1.3.3: Integrar modelos de IA con la plataforma}{2024-09-16}{2024-11-30} \\
+      \ganttbar[name=T14]{1.3.4: Elaborar documentación técnica}{2024-12-01}{2024-12-01} \\
+      
+      % Grupo de tareas 4: Gestión del proyecto y presentación
+      \ganttgroup{1.4: Gestión del proyecto y presentación}{2024-07-01}{2024-12-31} \\
+      \ganttbar[name=T15]{1.4.1: Gestionar riesgos y problemas}{2024-07-01}{2024-12-01} \\
+      \ganttbar[name=T16]{1.4.2: Preparar la presentación pública}{2024-12-02}{2024-12-31} \\
+      
+      % Grupo de tareas 5: Generación de entregables y proceso de cierre
+      \ganttgroup{1.5: Generación de entregables y proceso de cierre}{2024-12-01}{2024-12-31} \\
+      \ganttbar[name=T17]{1.5.1: Inicio elaboración memoria técnica}{2024-12-01}{2024-12-10} \\
+      \ganttbar[name=T18]{1.5.2: Revisión y correcciones de la memoria}{2024-12-11}{2024-12-15} \\
+      \ganttbar[name=T19]{1.5.3: Fin de elaboración memoria técnica}{2024-12-16}{2024-12-22} \\
+      \ganttbar[name=T20]{1.5.4: Revisión y correcciones de la memoria}{2024-12-23}{2024-12-27} \\
+      \ganttbar[name=T21]{1.5.5: Elaboración de la presentación final}{2024-12-28}{2024-12-30} \\
+      \ganttmilestone[name=M1]{1.5.6: Ensayo de la presentación}{2024-12-31} \\
+      
+      % Elaboración de publicación científica
+      \ganttgroup{1.6: Elaboración de publicación científica}{2024-08-01}{2024-12-31} \\
+      \ganttbar[name=T22]{1.6.1: Elaboración de la publicación científica}{2024-08-01}{2024-11-30} \\
+      \ganttmilestone[name=M2]{1.6.2: Revisión de la publicación}{2024-11-30} \\
+      \ganttbar[name=T23]{1.6.3: Corrección y finalización}{2024-12-01}{2024-12-15} \\
     \end{ganttchart}
   \end{center}
-  \caption{Diagrama de gantt de ejemplo}
-  \label{fig:gantt}
-\end{figure}
-
-
-\begin{landscape}
-\begin{figure}[htpb]
-\centering 
-\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
-\caption{Ejemplo de diagrama de Gantt (apaisado).} %Modificar este título acorde.
-\label{fig:diagGantt}
+  \caption{Diagrama de Gantt}
+  \label{fig:ganttchart}
 \end{figure}
 
 \end{landscape}
 
-\end{consigna}
 
 
 \section{12. Presupuesto detallado del proyecto}
