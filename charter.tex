@@ -663,29 +663,92 @@ La probabilidad de ocurrencia se reduce a 3 debido a la implementación de las m
 \textbf{Nuevo RPN}:\\
 Con la nueva asignación de S y O, el nuevo RPN para este riesgo es 30 (RPN = S x O).
 
+
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-Elija al menos diez requerimientos que a su criterio sean los más importantes/críticos/que aportan más valor y para cada uno de ellos indique las acciones de verificación y validación que permitan asegurar su cumplimiento.
+\subsection{Requerimientos funcionales}
 
 \begin{itemize} 
-\item Req \#1: copiar acá el requerimiento con su correspondiente número.
+\item Req \#1: El sistema debe ser capaz de recolectar datos meteorológicos históricos y actuales de la base de datos de la DINAC.
 
 \begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar.
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar. 
+	\item Verificación: Realizar pruebas de conexión y extracción de datos utilizando scripts desarrollados para asegurar que se puedan recuperar datos correctamente desde la base de datos de la DINAC. Verificar que los datos obtenidos cumplen con los formatos y estructuras esperados.
+	\item Validación: Consultar con el cliente para confirmar que los datos recolectados son los correctos y están en el formato adecuado para su análisis. Validar la precisión de los datos obtenidos comparándolos con fuentes externas o datos históricos conocidos.
 \end{itemize}
 
+\item Req \#2: El sistema debe implementar y entrenar múltiples modelos de IA para determinar su conveniencia en términos de precisión, eficiencia y robustez.
+
+\begin{itemize}
+	\item Verificación: Revisar los algoritmos de IA implementados para asegurar que cumplen con los requisitos funcionales y no funcionales especificados. Validar que los modelos se entrenan correctamente con los datos preprocesados y que los resultados cumplen con los criterios de precisión y eficiencia establecidos.
+	\item Validación: Evaluar el rendimiento de los modelos en condiciones reales y con datos no vistos para confirmar que los modelos cumplen con las expectativas de precisión y robustez definidas. Obtener retroalimentación del cliente sobre la eficacia de los modelos en escenarios reales.
 \end{itemize}
 
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.  
+\item Req \#3: El sistema debe superar a los modelos actuales en términos de precisión.
 
-Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.  
+\begin{itemize}
+	\item Verificación: Comparar los resultados de los nuevos modelos con los modelos actuales utilizando métricas de evaluación como precisión, recall, y F1-score. Verificar que los nuevos modelos ofrecen mejoras en comparación con los modelos existentes.
+	\item Validación: Presentar los resultados comparativos al cliente para confirmar que las mejoras en precisión cumplen con sus expectativas y necesidades. Obtener su aprobación sobre el rendimiento superior de los nuevos modelos.
+\end{itemize}
 
-En cambio, las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
+\item Req \#4: El sistema debe emitir advertencias tempranas basadas en las predicciones de eventos extremos.
 
-\end{consigna}
+\begin{itemize}
+	\item Verificación: Realizar pruebas de generación de alertas con datos simulados para asegurar que el sistema emite advertencias de manera precisa y oportuna. Verificar que las alertas cumplen con los criterios de umbral establecidos.
+	\item Validación: Confirmar con el cliente que las alertas generadas cumplen con los requisitos y son útiles para la toma de decisiones. Evaluar la efectividad de las alertas en escenarios simulados y reales.
+\end{itemize}
+
+\item Req \#5: Los datos meteorológicos históricos y actuales deben estar disponibles en la base de datos de la DINAC.
+
+\begin{itemize}
+	\item Verificación: Revisar la base de datos de la DINAC para asegurar que los datos necesarios están disponibles y accesibles. Validar la integridad y disponibilidad de los datos a través de pruebas de extracción y consulta.
+	\item Validación: Confirmar con el cliente que los datos disponibles en la base de datos cumplen con sus expectativas y necesidades para el análisis y entrenamiento de modelos.
+\end{itemize}
+
+\item Req \#6: La efectividad de los modelos será acordada y evaluada en conjunto con el cliente.
+
+\begin{itemize}
+	\item Verificación: Revisar los criterios y métricas acordadas para evaluar la efectividad de los modelos. Validar que las evaluaciones se realizan según estos criterios y métricas.
+	\item Validación: Consultar con el cliente para confirmar que la evaluación de la efectividad de los modelos cumple con sus expectativas y que los resultados son satisfactorios.
+\end{itemize}
+\end{itemize}
+
+\subsection{Requerimientos no funcionales}
+
+\begin{itemize} 
+\item Req \#7: La solución debe estar programada de forma modular para que el código de sus características funcionales pueda ser fácilmente reutilizado y/o escalado.
+
+\begin{itemize}
+	\item Verificación: Revisar el diseño del código y la arquitectura del sistema para asegurar que sigue un enfoque modular. Validar la implementación de módulos y su capacidad de ser reutilizados o escalados según sea necesario.
+	\item Validación: Consultar con el cliente para asegurar que el enfoque modular cumple con las expectativas y facilita la escalabilidad y reutilización del sistema.
+\end{itemize}
+
+\item Req \#8: El sistema debe ser capaz de procesar grandes volúmenes de datos sin degradar su rendimiento.
+
+\begin{itemize}
+	\item Verificación: Realizar pruebas de carga para evaluar el rendimiento del sistema al procesar grandes volúmenes de datos. Medir tiempos de procesamiento y respuesta para asegurar que el rendimiento se mantiene dentro de los límites aceptables.
+	\item Validación: Obtener retroalimentación del cliente sobre el rendimiento del sistema en condiciones de operación con grandes volúmenes de datos y confirmar que cumple con los requisitos de rendimiento establecidos.
+\end{itemize}
+
+\item Req \#9: Deben definirse formatos estándar para la importación y exportación de datos.
+
+\begin{itemize}
+	\item Verificación: Revisar la implementación de formatos de datos para asegurar que cumplen con los estándares definidos para importación y exportación. Validar la correcta conversión y manejo de datos en estos formatos.
+	\item Validación: Consultar con el cliente para confirmar que los formatos estándar utilizados son adecuados y cumplen con sus requerimientos para la integración y manejo de datos.
+\end{itemize}
+\end{itemize}
+
+\subsection{Requerimientos de documentación}
+
+\begin{itemize}
+\item Req \#10: Debe crearse una documentación técnica del sistema, incluyendo su arquitectura, diseño y funcionamiento.
+
+\begin{itemize}
+	\item Verificación: Revisar la documentación técnica para asegurar que cubre todos los aspectos del sistema, incluyendo arquitectura, diseño y funcionamiento. Verificar que la documentación es clara y completa.
+	\item Validación: Obtener la aprobación del cliente sobre la documentación técnica para confirmar que cumple con sus expectativas y proporciona la información necesaria para la comprensión y mantenimiento del sistema.
+\end{itemize}
+\end{itemize}
+
 
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
