@@ -25,7 +25,7 @@ codirector, % Uncomment to add a codirector to the title page
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
 
-\cliente{Carlos Roberto Salinas}
+\cliente{Dr. Carlos Roberto Salinas}
 \empresaCliente{Dirección de Meteorología e Hidrología}
  
 \fechaINICIO{18 de junio de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
@@ -299,7 +299,7 @@ Las historias están valoradas en un sistema de puntaje (\textit{story points}) 
 
 \textit{Story points}: 13 (complejidad: 5, dificultad: 5, incertidumbre: 3)
 
-\item Como Usuario, quiero comparar los resultados obtenidos de lo modelos de IA entrenados con el modelo actual para seleccionar el más adecuado para nuestras necesidades.
+\item Como Usuario, quiero comparar los resultados obtenidos de los modelos de IA entrenados con el modelo actual para seleccionar el más adecuado para nuestras necesidades.
 
 \textit{Story points}: 13 (complejidad: 5, dificultad: 3, incertidumbre: 5)
 
@@ -483,12 +483,6 @@ En la figura \ref{fig:ganttchart} se observa el diagrama de \textit{Gantt} del p
   \label{fig:ganttchart}
 \end{figure}
 
-
-
-
-
-
-
 \end{landscape}
 
 \section{12. Presupuesto detallado del proyecto}
@@ -547,35 +541,84 @@ En relación con el cambio vigente a la fecha, 26 de julio de 2024, es de USD \$
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
-\begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
-\end{itemize}   
+\subsection{Identificación de riesgos y estimación de consecuencias}
 
-Riesgo 2:
+Se identifican los siguientes riesgos para este proyecto. Se utilizará una escala de 1 a 10 para cuantificar la severidad (S) y la ocurrencia (O), siendo 10 el valor máximo de probabilidad para ambas.
+
+\textbf{Riesgo 1: Bajo desempeño de los modelos de IA}
 \begin{itemize}
-	\item Severidad (S): X.\\
-	Justificación...
-	\item Ocurrencia (O): Y.\\
-	Justificación...
+  \item \textbf{Descripción:} Los resultados obtenidos por los algoritmos están por debajo de los esperados, o su tiempo de procesamiento es mayor al esperado.
+  \item \textbf{Severidad (S):} 10
+  
+  \textbf{Justificación:} Si el desempeño de los modelos de IA no cumple con las expectativas de precisión, la utilidad del sistema se verá comprometida. Además, un tiempo de procesamiento excesivo puede impedir la detección y respuesta en tiempo real, afectando la capacidad del sistema para emitir alertas tempranas.
+  \item \textbf{Probabilidad de ocurrencia (O):} 4
+  
+  \textbf{Justificación:} Aunque los algoritmos puedan ser probados en otros contextos y demuestren resultados aceptables, la aplicación específica para la predicción de eventos climáticos extremos es novedosa y puede presentar desafíos imprevistos.
 \end{itemize}
 
-Riesgo 3:
+\textbf{Riesgo 2: Interrupción en el acceso a los datos de la DINAC}
+
 \begin{itemize}
-	\item Severidad (S):  X.\\
-	Justificación...
-	\item Ocurrencia (O): Y.\\
-	Justificación...
+  \item \textbf{Descripción:} La disponibilidad continua de datos meteorológicos desde la base de datos de la DINAC es crucial para el desarrollo y funcionamiento del sistema.
+  \item \textbf{Severidad (S):} 9
+  
+  \textbf{Justificación:} La falta de acceso a los datos impedirá la recolección y actualización de información necesaria para entrenar y validar los modelos, comprometiendo la precisión y actualidad de las predicciones.
+  \item \textbf{Probabilidad de ocurrencia (O):} 3
+  
+  \textbf{Justificación:} Aunque se asume que la DINAC proporcionará acceso continuo a los datos, existen factores externos que podrían afectar la disponibilidad, como problemas técnicos o administrativos.
 \end{itemize}
 
+\textbf{Riesgo 3: Colaboración insuficiente de expertos}
 
-b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
+\begin{itemize}
+  \item \textbf{Descripción:} La colaboración de expertos en climatología e inteligencia artificial es esencial para guiar el desarrollo del proyecto y validar los resultados obtenidos.
+  \item \textbf{Severidad (S):} 8
+  
+  \textbf{Justificación:} La falta de orientación y validación por parte de expertos puede resultar en un desarrollo subóptimo y en resultados menos precisos, lo que afectará la calidad del proyecto.
+  \item \textbf{Probabilidad de ocurrencia (O):} 3
+  
+  \textbf{Justificación:} Aunque se ha planeado obtener la colaboración de expertos, siempre existe la posibilidad de que estos no estén disponibles en los momentos necesarios debido a otros compromisos o falta de interés.
+\end{itemize}
+
+\textbf{Riesgo 4: Problemas con la infraestructura tecnológica}
+
+\begin{itemize}
+  \item \textbf{Descripción:} La infraestructura tecnológica de la DINAC debe ser adecuada para el correcto entrenamiento y despliegue de los modelos de IA.
+  \item \textbf{Severidad (S):} 7
+  
+  \textbf{Justificación:} Una infraestructura inadecuada puede limitar la capacidad de procesamiento de datos y el entrenamiento de modelos complejos, afectando el rendimiento y la efectividad del sistema.
+  \item \textbf{Probabilidad de ocurrencia (O):} 4
+  
+  \textbf{Justificación:} Aunque se asume que la DINAC cuenta con la infraestructura necesaria, existe la posibilidad de encontrar limitaciones técnicas no anticipadas durante el desarrollo del proyecto.
+\end{itemize}
+
+\textbf{Riesgo 5: Dificultades en la imputación de valores faltantes}
+
+\begin{itemize}
+  \item \textbf{Descripción:} La calidad de los datos es crucial para el entrenamiento de los modelos de IA, y la presencia de datos faltantes puede afectar significativamente los resultados.
+  \item \textbf{Severidad (S):} 7
+  
+  \textbf{Justificación:} Si no se manejan adecuadamente los datos faltantes, los modelos de IA podrían generar predicciones inexactas o erróneas, afectando la confiabilidad del sistema.
+  \item \textbf{Probabilidad de ocurrencia (O):} 4
+  
+  \textbf{Justificación:} La técnica de imputación de valores faltantes es compleja y puede no siempre ser efectiva, especialmente cuando la cantidad de datos faltantes es significativa.
+\end{itemize}
+
+\textbf{Riesgo 6: Retrasos en el cumplimiento de los plazos del proyecto}
+
+\begin{itemize}
+  \item \textbf{Descripción:} El proyecto puede enfrentar dificultades para cumplir con las fechas estimadas de desarrollo debido a imprevistos o subestimación del esfuerzo requerido.
+  \item \textbf{Severidad (S):} 4
+  
+  \textbf{Justificación:} Aunque los plazos establecidos son importantes para la planificación y seguimiento del proyecto, la flexibilidad en los tiempos de desarrollo puede mitigar en cierta medida las consecuencias de los retrasos.
+  \item \textbf{Probabilidad de ocurrencia (O):} 3
+  
+  \textbf{Justificación:} La probabilidad de este riesgo es relativamente baja debido a la planificación cuidadosa basada en pruebas de concepto previas y la experiencia adquirida en proyectos similares.
+\end{itemize}
+
+\subsection{Tabla de gestión de riesgos}
+
+El RPN se calcula como RPN = S x O.
 
 \begin{table}[htpb]
 \centering
@@ -583,37 +626,42 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+Bajo desempeño de los modelos de IA & 10 & 4 & 40 & 10 & 3 & 30 \\ \hline
+Interrupción en el acceso a los datos de la DINAC & 9 & 3 & 27 & - & - & - \\ \hline
+Colaboración insuficiente de expertos & 8 & 3 & 24 & - & - & - \\ \hline
+Problemas con la infraestructura tecnológica & 7 & 4 & 28 & - & - & - \\ \hline
+Dificultades en la imputación de valores faltantes & 6 & 4 & 24 & - & - & - \\ \hline
+Retrasos en el cumplimiento de los plazos del proyecto & 4 & 3 & 12 & - & - & - \\ \hline
 \end{tabularx}%
 \end{table}
 
-Criterio adoptado: 
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 30.
 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+\textbf{Nota:} los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
-Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
+\subsection{Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido}
 
-c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
- 
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  \begin{itemize}
-	\item Severidad (S*): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O*): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
-	\end{itemize}
+\textbf{Riesgo 1: Bajo rendimiento de los modelos}
 
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
+Plan de mitigación:
+Para mitigar el riesgo de bajo rendimiento de los modelos, se implementarán las siguientes acciones:
+\begin{itemize}
+    \item \textbf{Diversificación de modelos}: Implementar múltiples modelos de IA utilizando diferentes algoritmos para aumentar las probabilidades de éxito.
+    \item \textbf{Evaluación continua}: Realizar pruebas continuas y ajustes en los modelos durante el desarrollo para identificar y corregir problemas de rendimiento a tiempo.
+    \item \textbf{Consultoría experta}: Involucrar a expertos en IA y climatología durante todo el proceso para obtener asesoramiento y mejorar la precisión de los modelos.
+    \item \textbf{Optimización de recursos}: Asegurar la disponibilidad de recursos computacionales adecuados para el entrenamiento y evaluación de los modelos, lo cual incluye el uso de GPUs y servicios de cloud computing.
+\end{itemize}
 
-\end{consigna}
+Nueva asignación de S y O:
 
+\textbf{Severidad (S*)}: 10\\
+La severidad se mantiene en 10, ya que el impacto de un bajo rendimiento de los modelos sigue siendo crítico. Si los modelos no funcionan correctamente, la utilidad del sistema completo se ve comprometida, afectando la capacidad de emitir advertencias tempranas y realizar predicciones precisas.
+
+\textbf{Probabilidad de ocurrencia (O*)}: 3\\
+La probabilidad de ocurrencia se reduce a 3 debido a la implementación de las medidas de mitigación mencionadas. La diversificación de modelos, la evaluación continua, la consultoría experta y la optimización de recursos reducen significativamente la probabilidad de que los modelos presenten un bajo rendimiento.
+
+\textbf{Nuevo RPN}:\\
+Con la nueva asignación de S y O, el nuevo RPN para este riesgo es 30 (RPN = S x O).
 
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
