@@ -167,7 +167,7 @@ Usuario final & Dr. Sidney da Silva Viana                  & Central Hidroeléct
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
 
-Desarrollar un sistema avanzado de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando una respuesta más efectiva ante los fenómenos climáticos adversos y contribuyendo a la mitigación de sus impactos en Paraguay y sus alrededores.
+Desarrollar un sistema de predicción de eventos climáticos y meteorológicos extremos utilizando técnicas de IA. Este sistema tiene como objetivo principal mejorar la precisión y la rapidez de los pronósticos meteorológicos, facilitando respuestas más efectivas ante los fenómenos climáticos adversos y contribuyendo a la mitigación de sus impactos en Paraguay y sus alrededores.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
@@ -180,14 +180,14 @@ El proyecto incluye:
 datos de la DINAC.
 		\item Filtrado, normalización y preprocesamiento de los datos para su uso en los modelos de IA.
 		\end{itemize}
-	\item Investigación y desarrollo de algoritmos de IA:
+	\item Investigación y desarrollo de modelos de IA:
 		\begin{itemize}
-		\item Identificación y selección de algoritmos de IA adecuados para el análisis de datos meteorológicos.
+		\item Identificación y selección de modelos de IA adecuados para el análisis de datos meteorológicos.
 		\item Desarrollo y ajuste de modelos de IA para predicción climática a corto y largo plazo.
 		\end{itemize}
 	\item Implementación de la plataforma de predicción:
 		\begin{itemize}
-		\item Diseño y desarrollo de una plataforma tecnológica que integre los modelos de IA desarrollados.
+		\item Diseño y desarrollo de una plataforma tecnológica que integre el modelo de IA desarrollado.
 		\item Implementación de interfaces de usuario para la visualización de predicciones y alertas.
 		\end{itemize}
 	\item Validación y optimización de modelos:
@@ -342,7 +342,7 @@ Las historias están valoradas en un sistema de puntaje (\textit{story points}) 
 	\end{enumerate}
 \item Grupo de tareas 2: desarrollo y evaluación de modelos de IA (180 h)
 	\begin{enumerate}
-	\item Tarea 7: investigar y seleccionar algoritmos apropiados para el análisis de datos meteorológicos (30 h).
+	\item Tarea 7: investigar y seleccionar modelos apropiados para el análisis de datos meteorológicos (30 h).
 	\item Tarea 8: implementar los modelos seleccionados en el entorno de desarrollo (50 h).
 	\begin{enumerate}
 	\item Subtarea 8.1: configurar el entorno de desarrollo para la implementación de modelos (10 h).	
@@ -448,7 +448,7 @@ En la figura \ref{fig:ganttchart} se observa el diagrama de \textit{Gantt} del p
       
       % Grupo de tareas 2: Desarrollo y evaluación de modelos de IA
       \ganttgroup{2: Desarrollo y evaluación de modelos de IA}{2024-09-16}{2024-10-31} \\
-      \ganttbar[name=T7]{2.1: Investigar y seleccionar algoritmos}{2024-09-16}{2024-09-30} \\
+      \ganttbar[name=T7]{2.1: Investigar y seleccionar modelos}{2024-09-16}{2024-09-30} \\
       \ganttbar[name=T8]{2.2: Implementar modelos seleccionados}{2024-10-01}{2024-10-15} \\
       \ganttbar[name=T9]{2.3: Entrenar y ajustar modelos}{2024-10-16}{2024-10-31} \\
       \ganttbar[name=T10]{2.4: Comparar precisión y eficiencia}{2024-10-31}{2024-10-31} \\
@@ -548,13 +548,13 @@ Se utilizará una escala de 1 a 10 para cuantificar la severidad (S) y la ocurre
 
 \textbf{Riesgo 1: bajo desempeño de los modelos de IA.}
 \begin{itemize}
-  \item \textbf{Descripción:} los resultados obtenidos por los algoritmos están por debajo de los esperados, o su tiempo de procesamiento es mayor al esperado.
+  \item \textbf{Descripción:} los resultados obtenidos por los modelos están por debajo de los esperados, o su tiempo de procesamiento es mayor al esperado.
   \item \textbf{Severidad (S):} 10
   
   \textbf{Justificación:} si el desempeño de los modelos de IA no cumple con las expectativas de precisión, la utilidad del sistema se verá comprometida. Además, un tiempo de procesamiento excesivo puede impedir la detección y respuesta en tiempo real, afectando la capacidad del sistema para emitir alertas tempranas.
   \item \textbf{Probabilidad de ocurrencia (O):} 4
   
-  \textbf{Justificación:} aunque los algoritmos puedan ser probados en otros contextos y demuestren resultados aceptables, la aplicación específica para la predicción de eventos climáticos extremos es novedosa y puede presentar desafíos imprevistos.
+  \textbf{Justificación:} aunque los modelos puedan ser probados en otros contextos y demuestren resultados aceptables, la aplicación específica para la predicción de eventos climáticos extremos es novedosa y puede presentar desafíos imprevistos.
 \end{itemize}
 
 \textbf{Riesgo 2: interrupción en el acceso a los datos de la DINAC.}
@@ -646,7 +646,7 @@ Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean may
 
 Plan de mitigación: para mitigar el riesgo de bajo rendimiento de los modelos, se implementarán las siguientes acciones:
 \begin{itemize}
-    \item \textbf{Diversificación de modelos}: implementar múltiples modelos de IA utilizando diferentes algoritmos para aumentar las probabilidades de éxito.
+    \item \textbf{Diversificación de modelos}: implementar múltiples modelos de IA utilizando diferentes modelos para aumentar las probabilidades de éxito.
     \item \textbf{Evaluación continua}: realizar pruebas continuas y ajustes en los modelos durante el desarrollo para identificar y corregir problemas de rendimiento a tiempo.
     \item \textbf{Consultoría experta}: involucrar a expertos en IA y climatología durante todo el proceso para obtener asesoramiento y mejorar la precisión de los modelos.
     \item \textbf{Optimización de recursos}: asegurar la disponibilidad de recursos computacionales adecuados para el entrenamiento y evaluación de los modelos, lo cual incluye el uso de GPUs y servicios de cloud computing.
@@ -680,7 +680,7 @@ Con la nueva asignación de S y O, el nuevo RPN para este riesgo es 30 (RPN = S 
 \item Req \#2: el sistema debe implementar y entrenar múltiples modelos de IA para determinar su conveniencia en términos de precisión, eficiencia y robustez.
 
 \begin{itemize}
-	\item Verificación: revisar los algoritmos de IA implementados para asegurar que cumplen con los requisitos funcionales y no funcionales especificados. Validar que los modelos se entrenan correctamente con los datos preprocesados y que los resultados cumplen con los criterios de precisión y eficiencia establecidos.
+	\item Verificación: revisar los modelos de IA implementados para asegurar que cumplen con los requisitos funcionales y no funcionales especificados. Validar que los modelos se entrenan correctamente con los datos preprocesados y que los resultados cumplen con los criterios de precisión y eficiencia establecidos.
 	\item Validación: evaluar el rendimiento de los modelos en condiciones reales y con datos no vistos para confirmar que los modelos cumplen con las expectativas de precisión y robustez definidas. Obtener retroalimentación del cliente sobre la eficacia de los modelos en escenarios reales.
 \end{itemize}
 
